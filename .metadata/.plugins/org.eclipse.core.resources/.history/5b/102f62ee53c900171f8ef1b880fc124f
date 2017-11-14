@@ -7,11 +7,14 @@ public class PsH3Ej33V2 {
 				"Eric", "Agustin", "Antonio", "Carla", "Jaime", "Diego", "Jesus", "Abel", "David",
 				"Pilar", "Carmen", "Teresa", "Lolo", "Perico"};//21 elementos
 		String arrayNombres[] = new String[20];
+		
 		int indice, indiceAzar;
+		
 		for( indice = 0; indice < 20; indice++){// indice de arrayNombres
 			indiceAzar = (int)Math.floor(Math.random()*21);// para elegir un nombre al azar de vecMuchosNombres
 			arrayNombres[indice]  = vecMuchosNombres[indiceAzar];
 		}
+		
 		for( indice = 0; indice < 20; indice++){
 			System.out.println(arrayNombres[indice]);
 		}
