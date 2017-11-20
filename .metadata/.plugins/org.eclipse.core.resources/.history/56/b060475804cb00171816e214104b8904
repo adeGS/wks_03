@@ -1,0 +1,31 @@
+
+public class T02Ej01Vectores {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int vecNum [] = new int [20];
+		double suma, media;
+		int inicio, teclado, indice, supMedia, infMedia, igMedia;
+		
+		System.out.println("Para empezar a saber los numeros presione E");
+		inicio = teclado.nextline();
+		do(inicio = E){
+			
+		}
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}//main
+
+}//class

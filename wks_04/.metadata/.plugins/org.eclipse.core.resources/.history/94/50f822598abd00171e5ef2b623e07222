@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class T04Ej03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String teclado = new String ("System.in");
+		String frase, palabra;
+		
+		int num, index ;		
+		System.out.println("Introduzca la frase a buscar");
+		frase = teclado.nextLine();
+		if(frase.startsWith(palabra + " "){
+			System.out.println("Está al principio con indice 0");
+		}else if(frase.indexOf(" " + palabra + " ")){
+			System.out.println("La palabra se encuentra en la posición numero" + );
+			}
+			
+	}//main
+
+}//class

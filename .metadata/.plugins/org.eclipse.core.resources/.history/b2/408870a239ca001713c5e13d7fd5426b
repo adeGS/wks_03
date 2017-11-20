@@ -1,0 +1,25 @@
+
+public class T04Ej01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int indice;
+		String frase;
+		frase = ciervo;
+		
+		System.out.println(" Escribe una frase ");
+		frase = new String (System.in);
+		indice = 0;
+		for( indice=0 ; indice < 80 ; indice++){
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+	}//main
+
+}//class

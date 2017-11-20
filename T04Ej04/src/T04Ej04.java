@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class T04Ej04 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String frase;
+		final int MAX_LONG;
+		int minus, MAYUS;
+		Scanner teclado = new scanner (System.in);
+		do {
+			System.out.println("Escriba un frase inferior a " + MAX_LONG + " caracteres:");	
+			frase = teclado.nextLine()
+		}	
+		
+		
+		
+		
+		
+		
+
+	}//main
+
+}//class

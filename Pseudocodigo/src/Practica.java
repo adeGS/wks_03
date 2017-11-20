@@ -4,14 +4,15 @@ public class Practica {
 
 	public static void main() {
 		// TODO Auto-generated method stub
-		String vecMuchosNombres[] = {'Juan', 'Dafne', 'Elisa', 'Violeta', 'Pedro', 'Roberto', 'Lisa', 'Jaime', 
-		'Luis', 'German', 'Eric', 'Jose', 'Carla', 'Agustin' 'Rafael', 'Jesus', 'Raul', 'Diego', 'Victoria', 'Carlos'};
+		String vecMuchosNombres[] = {"Ana", "Jose", "Rafa", "Luis", "Adela", "Raul", "German",
+				"Eric", "Agustin", "Antonio", "Carla", "Jaime", "Diego", "Jesus", "Abel", "David",
+				"Pilar", "Carmen", "Teresa", "Lolo", "Perico"};
 		String arrayNombre[]= new String [20];
 		int indice;
 
 		indice = 0;
 		for( ; indice<20 ; indice++){
-			System.out.println(String arrayNombres[indice]= new String [20]);
+			System.out.println(String arrayNombre [indice]= new String [20]);
 		}
 
 	}//main			
