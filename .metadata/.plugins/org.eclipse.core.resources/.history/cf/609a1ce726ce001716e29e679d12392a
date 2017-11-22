@@ -1,0 +1,20 @@
+/*5-Hacer un pseudocódigo que imprima los números impares hasta el 100 y que imprima
+cuantos impares hay */
+
+public class PsH3Ej05 {
+
+	public static void main(String[] args) {
+			int num, contador;
+			num = 1;
+			contador = 0;
+			for(num = 1; num < 100; num++){
+				if(num % 2 == 1){
+					System.out.println(num);
+				}
+				contador = contador + 1;
+				contador++;
+				
+			}System.out.println(contador);
+	}//main
+
+}//class
