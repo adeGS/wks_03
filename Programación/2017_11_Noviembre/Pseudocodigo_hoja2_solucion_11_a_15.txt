@@ -1,0 +1,174 @@
+/*11.-Se define el factorial de un número n como:
+n*(n-1)*(n-2)*.......*3*2*1. Hacer un programa que lea un número n
+filtrando que sea mayor que cero y calcule su factorial
+*/
+
+Variables
+n, k: numéricas enteras
+factorial: variable de tipo numérico entero largo
+
+inicio
+	visualizar "introduce un numero mayor que cero"
+	introducir n
+	mq n<0 
+		visualizar "introduce un numero mayor que cero"
+		introducir n	
+	finmq
+	factorial=1
+	para k= n hasta 1 paso -1	
+		factorial = factorial * k		
+	finpara
+	Visualizar "El factorial de ", n, " es ", factorial
+fin
+
+/*12.-Un número se dice que es perfecto cuando la suma de sus divisores excluido él es
+igual a dicho número. Hacer un programa que lea un número y nos diga si es ó no
+perfecto
+*/
+Variables
+n, k, sumaDivisores: numéricas enteras
+
+inicio
+	// pediremos un número positivo
+	visualizar "introduce un numero mayor que cero"
+	introducir n
+	mq n<0 
+		visualizar "introduce un numero mayor que cero"
+		introducir n	
+	finmq
+	sumaDivisores = 0
+	para k= 1 hasta n-1 paso 1
+		si n mod k = 0 entonces
+			sumaDivisores = sumaDivisores +k
+		finsi
+	finpara
+	Si sumaDivisores = n
+		Visualizar n, " es perfecto"
+	Sino
+		Visualizar n, " no es perfecto"
+	Finsi
+fin
+
+/*13.-Dado un numero n leído por teclado encontrar el numero p primo mas cercano a
+él por exceso.
+*/
+
+Variables
+num, k, contaDivisores, posiblePrimo: numéricas enteras 
+encontrado: booleana
+
+Inicio
+	Visualizar "¿Numero mayor que cero?"
+	Introducir num
+	MQ num < 0
+		Visualizar "¿Numero mayor que cero?"
+		Introducir num
+	FMQ
+	posiblePrimo = num
+	encontrado = falso
+	MQ encontrado = falso
+		posiblePrimo = posiblePrimo + 1 // generamos los numeros mayores que num
+		//comprobamos si es primo
+		contaDivisores = 0
+		para k = 2 hasta (posiblePrimo - 1) paso 1
+			Si posiblePrimo MOD k = 0
+				contaDivisores = contaDivisores + 1
+			finsi
+		finpara
+		Si contaDivisores = 0 // hemos encontrado un numero primo
+			encontrado = verdadero
+		finsi
+	FMQ
+	Visualizar "El primo más cercano a ", num, " por exceso es: ", posiblePrimo
+Fin
+
+/*14.-Dado un numero n imprimir la lista de todos los numero primos hasta dicho numero
+n.
+*/
+
+Variables
+num, divisor, contaDivisores, posiblePrimo: numéricas enteras 
+
+Inicio
+	Visualizar "¿Numero mayor que cero?"
+	Introducir num
+	MQ num < 0
+		Visualizar "¿Numero mayor que cero?"
+		Introducir num
+	FMQ
+	Para posiblePrimo = 1 hasta n
+		contaDivisores=0
+		Para divisor = 2 hasta posiblePrimo - 1
+			Si posiblePrimo MOD divisor = 0
+				contaDivisores = contaDivisores + 1
+			finsi
+		finpara
+		Si contaDivisores = 0 // hemos encontrado un numero primo
+			Visualizar posiblePrimo
+		finsi
+	finpara
+Fin
+
+/*15.- Realizar un programa que elija mediante un menú un tipo de figura:
+- Triángulo
+- Cuadrado
+- Rectángulo
+Una vez elegida la opción, nos tiene que pedir en cada caso los datos necesarios para
+calcular su área y mostrarla.
+*/
+
+Variables
+opcion, base, altura: variables de tipo numerico entero
+area: variable de tipo numerico real
+
+Inicio
+	Visualizar "Calculo del area de:"
+	Visualizar "1 Triangulo"
+	Visualizar "2 Cuadrado"
+	Visualizar "3 Rectangulo"
+	Visualizar "0 Salir"
+	Introducir opcion
+	MQ opcion <>0
+		Caso de opcion:
+			0:
+				break
+			1: 	Visualizar "Base del triangulo"
+				Introducir base
+				Visualizar "Altura del triangulo"
+				Introducir altura
+				area = base * altura / 2
+				Visualizar "Area del triangulo: ", area
+				break
+			2:	Visualizar "lado del cuadrado"
+				Introducir base
+				area = base * base
+				Visualizar "Area del cuadrado: ", area
+				break
+			3:	Visualizar "Base del rectangulo"
+				Introducir base
+				Visualizar "Altura del rectangulo"
+				Introducir altura
+				area = base * altura
+				Visualizar "Area del rectangulo: ", area
+				break
+			otros casos:
+				Visualizar "Opcion incorrecta"
+		Fincaso
+		Visualizar "Calculo del area de:"
+		Visualizar "1 Triangulo"
+		Visualizar "2 Cuadrado"
+		Visualizar "3 Rectangulo"
+		Visualizar "0 Salir"
+		Introducir opcion
+	FMQ
+Fin
+
+
+
+
+
+
+
+
+
+

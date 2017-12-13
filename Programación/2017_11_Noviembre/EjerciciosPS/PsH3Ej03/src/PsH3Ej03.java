@@ -1,0 +1,18 @@
+/*3-Hacer un pseudocódigo que imprima los números pares entre 0 y 100*/
+
+public class PsH3Ej03 {
+
+	public static void main(String[] args) {
+		int num;
+		num = 1;
+		while(num <= 100){
+			if(num % 2 == 0){
+				System.out.println(num);
+			}
+			num++;
+		}
+	}//main
+
+}//class
+
+

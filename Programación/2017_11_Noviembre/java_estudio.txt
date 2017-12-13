@@ -1,0 +1,98 @@
+1// Hacer un 
+pseudocódigo
+que imprima los 
+números
+del 1 al 100//
+
+
+num --> 1 al 100
+Visualizar ()
+Fin
++++++++++++++++++++++++++++++++++++
+
+public class PsH3Ej01 {
+
+	public static void main(String[] args) {
+		int=num;
+		num=1;
+		while(num<100){
+			System.out.println(num);
+			num++;
+		}
+	}// main
+
+}//class
+
+
+
+2// Hacer un 
+pseudocódigo
+que imprima los 
+números
+del 100 al 0, en orden decreciente//
+
+
+num=100;
+Visualizar num;
+num--;
+Fin
++++++++++++++++++++++++++++++++++
+
+public class PSH3Ej02 {
+
+	public static void main(String[] args) {
+		num int;
+		num=100;
+		While(num>=0){
+			System.out.println(num);
+			num--;
+		}
+
+	}//main
+
+}//class
+
+
+
+
+/*3 Hacer un 
+pseudocódigo
+que imprima los 
+números
+pares entre 0 y 100 //
+
+num=0;
+For(num MOD 2=0;num<=100; num++){}
+Visualizar num;
+Fin
+++++++++++++++++++++++++++++++++
+
+
+public class PSH3Ej03 {
+
+	public static void main(String[] args) {
+		num int;
+		num=1;
+		for(num=2; num<=100; num+=2/*num = num + 2*/){
+			System.out.println(num);
+		}
+	}//main
+
+}//class
+
+
+*/4 Hacer un programa que imprima la suma de los 100
+primeros 
+números */
+
+num=1;
+suma = num + 1;
+PARA num=1 HASTA num=100 PASO 1
+Fin
++++++++++++++++++++++++++++++++
+
+public class PSH3Ej04 {
+
+	public static void main(String[] args) {
+		num int;
+		suma /*declarar tipo de dato*/
